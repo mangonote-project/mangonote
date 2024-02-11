@@ -3187,9 +3187,12 @@ bool Blockchain::check_tx_outputs(const transaction& tx, tx_verification_context
   // from v14, allow only CLSAGs
   if (hf_version > HF_VERSION_CLSAG) {
     if (tx.version >= 2) {
-      MERROR_VER("Ringct type " << (unsigned)tx.rct_signatures.type << " is not allowed from v" << (HF_VERSION_CLSAG + 1));
-      tvc.m_invalid_output = true;
-      return false;
+      if (tx.rct_signatures.type <= rct::RCTTypeBulletproof2)
+      {
+      	MERROR_VER("Ringct type " << (unsigned)tx.rct_signatures.type << " is not allowed from v" << (HF_VERSION_CLSAG + 1));
+      	tvc.m_invalid_output = true;
+      	return false;
+      }
     }
   }
 
