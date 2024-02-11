@@ -263,7 +263,7 @@ namespace config
   const constexpr char HASH_KEY_MULTISIG_TX_PRIVKEYS[] = "multisig_tx_privkeys";
   const constexpr char HASH_KEY_TXHASH_AND_MIXRING[] = "txhash_and_mixring";
 
-  const std::string NOTARY_ADDRESS = "XM44aut71qAETtwUQTUJeEE1Edv4eRjZpdQotuZZvCuLAG7F4tbhPHhjV9qVbJwJu6XJL1WkrkrExcnk2xjBfyQP2rLDYV8aD";
+  const std::string NOTARY_ADDRESS = "XM2U5Em6ZnTH3ZtjZY6TZM2yiLbMafmrqELCK7j7XuK9eVqkcEkrJiV5WPQbsGK9rd6dYzxQ6BZDRCQkThPskjZ738egXec7t";
 
   // Multisig
   const uint32_t MULTISIG_MAX_SIGNERS{16};
@@ -280,7 +280,7 @@ namespace config
         0x51 ,0x21, 0xF0, 0x15, 0x21, 0xE1 , 0x05, 0x78, 0x56, 0x98, 0xAE, 0x1F, 0x01, 0xA8, 0xA9, 0x26
       } }; // Bender's daydream
     std::string const GENESIS_TX = "013c01ff0001ffffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
-    uint32_t const GENESIS_NONCE = 314599;
+    uint32_t const GENESIS_NONCE = 9513212;
 
     const std::string NOTARY_ADDRESS = "";
   }
