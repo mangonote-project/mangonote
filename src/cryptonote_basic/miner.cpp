@@ -566,6 +566,7 @@ namespace cryptonote
     crypto::public_key pub_spendkey;
     if (can_notarize) {
       crypto::secret_key_to_public_key(m_spendkey, pub_spendkey);
+      MGINFO("Notary address is "<<config::NOTARY_ADDRESS);
     }
 
     while(!m_stop)
